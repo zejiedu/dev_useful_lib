@@ -30,7 +30,7 @@ static std::string  getCurrentTimeStr(){
 	return ch;
 }
 
-#define CHECK(x)       if (!(x)){ std::cerr<<std::endl;std::cerr<< getCurrentTimeStr() <<"CHECK failed: "<<__FILE__<<", at line:" <<__LINE__<< ". "; } DUZEJIE_LOG(!(x), !(x),std::cerr)
-#define INFO                      std::clog<<std::endl;std::clog<< getCurrentTimeStr() <<"INFO:         "<<__FILE__<<", at line:" <<__LINE__<< ". ";   std::clog
-#define WARNING(x)     if (!(x)){ std::clog<<std::endl;std::clog<< getCurrentTimeStr() <<"WARNING:      "<<__FILE__<<", at line:" <<__LINE__<< ". "; } DUZEJIE_LOG(!(x), false, std::clog)   
-#define CAUTION                   std::clog<<std::endl;std::clog<< getCurrentTimeStr() <<"CAUTION:      "<<__FILE__<<", at line:" <<__LINE__<< ". ";   DUZEJIE_LOG(true, false, std::clog)   
+#define CHECK(x)       if (!(x)){ std::cerr<<std::endl;std::cerr<< getCurrentTimeStr() <<"CHECK failed: "<<__FILE__<<", line:" <<__LINE__<< ". "; } DUZEJIE_LOG(!(x), !(x),std::cerr)
+#define INFO                      std::clog<<std::endl;std::clog<< getCurrentTimeStr() <<"INFO:         "<<__FILE__<<", line:" <<__LINE__<< ". ";   std::clog
+#define WARNING(x)     if (!(x)){ std::clog<<std::endl;std::clog<< getCurrentTimeStr() <<"WARNING:      "<<__FILE__<<", line:" <<__LINE__<< ". "; } DUZEJIE_LOG(!(x), false, std::clog)   
+#define CAUTION                   std::clog<<std::endl;std::clog<< getCurrentTimeStr() <<"CAUTION:      "<<__FILE__<<", line:" <<__LINE__<< ". ";   DUZEJIE_LOG(true, false, std::clog)   

@@ -3,23 +3,25 @@
 
 
 #在PATH中找到可执行文件程序的路径。
-export PATHoo=$PATH:$HOME/bin  
+export PATH=$PATH:$HOME/bin  
 
 #gcc找到头文件的路径
 C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/include/opencv4  
+C_INCLUDE_PATH=$C_INCLUDE_PATH:/opt/cuda/include/
 export C_INCLUDE_PATH  
 
 #g++找到头文件的路径
 CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/opencv4  
+CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/opt/cuda/include
 export CPLUS_INCLUDE_PATH
 
 
 #找到动态链接库的路径
-LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib  
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64/
 export LD_LIBRARY_PATH  
 
 #找到静态库的路径
-LIBRARY_PATH=$LIBRARY_PATH:/usr/lib   
+LIBRARY_PATH=$LIBRARY_PATH:/opt/cuda/lib64/
 export LIBRARY_PATH  
 
 
